@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        input[type="text"],
+        input[type="date"] {
+        border: 2px solid #45a0d2;
+        border-radius: 5px;
+        margin-top: 3px;
+        margin-left: 5px;
+}
+    </style>
+</head>
+<body>
+    <h3>Registeration form</h3>
+    <form action="mailto:aichusadiqa@gmail.com" method="post" enctype="text/plain" target="_self">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <br><label for="birthdate">Birthdate: </label>
+        <input type="date" id="birthdate" />
+        <br><label for="weight">Weight: </label>
+        <input type="text" inputmode="numeric" id="weight"/>
+        <br><label for="height">Height: </label>
+        <input type="text" inputmode="numeric" id="height"/><br>
+        <label for="email">E-mail ID:</label>
+        <input type="email" id="email">
+        <input type="submit" value="Submit!"/>
+        <br>
+    </form>
+</body>
+</html>
