@@ -1,0 +1,394 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    overflow: hidden;
+}
+
+.container-header-row {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right: 10px;
+    margin-left: 25px;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    background: linear-gradient(69.5deg, #242663 0%, #5925a4 42.44%, #9571fe 77.89%, #2df9fd 106.99%);
+    color: white;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+}
+.brands-section{
+    width: 1200px;
+    margin: 0 0 auto;
+}
+
+.left {
+    padding-top: 60px;
+    text-align: justify;
+    font-family: "Avenir LT Std 95 Black";
+}
+
+.first-row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.right {
+    padding-bottom: 25px;
+}
+
+.left p {
+    font-size: 20px;
+}
+
+.left button {
+    border-radius: 25px;
+    margin-top: 30px;
+    padding: 12px;
+    color: #ff9500;
+    font-size: 15px;
+}
+
+.container-brands {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-underline {
+    box-sizing: border-box;
+    width: 90px;
+    height: 6px;
+    background: #430f86;
+    border-radius: 5px;
+}
+
+.heading-distribution {
+    width: 100%;
+    text-align: left;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+.dist-brands {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.dist-brands img {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.heading-logistics {
+    width: 100%;
+    text-align: left;
+    font-size: 24px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.logistic-brands {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logistic-brands img {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.styleimg {
+    height: 100px;
+    width: 100px;
+}
+
+.first-brand-row {
+    text-align: center;
+    padding: 20px;
+    font-family: "Roboto Medium";
+    font-style: normal;
+    font-weight: 750;
+    font-size: 30px;
+    line-height: 12px;
+    color: #ff9500;
+}
+.brand-underline{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.headerbtn {
+    background: linear-gradient(85.37deg, #ea028c 3.97%, #fed6a0 91.86%, #fedaa0 91.87%);
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+#hiring {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 200px;
+    height: 37px;
+    font-size: 14px;
+}
+
+#services {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    width: 200px;
+    height: 37px;
+    font-size: 14px;
+}
+
+.container-contact {
+    width: 100%;
+    height: 160;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.inner-contactus {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact-us {
+    padding: 20px;
+    font-family: "Roboto Medium";
+    font-style: normal;
+    font-weight: 750;
+    font-size: 30px;
+    line-height: 12px;
+    color: #ff9500;
+}
+
+.contact-underline {
+    box-sizing: border-box;
+    width: 72px;
+    height: 6px;
+    background: #430f86;
+    border-radius: 5px;
+}
+
+.row-contact-detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-heading {
+    color: #000;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.contact-phone {
+    display: flex;
+    flex-direction: row;
+    border-left: 86px solid #050748;
+    border-right: 7px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px rgb(233, 231, 231);
+    border-radius: 12px;
+    align-items: center;
+    width: 460px;
+    justify-content: center;
+}
+
+.image-phone {
+    position: relative;
+    left: -200px;
+}
+
+.text-phone {
+    position: relative;
+    left: -160px;
+    font-size: 24px;
+    color: #050748;
+    font-weight: 100;
+}
+
+.image-mail {
+    position: relative;
+    left: -170px;
+}
+
+.text-mail {
+    position: relative;
+    left: -140px;
+    font-size: 24px;
+    color: #050748;
+    font-weight: 100;
+}
+
+.contact-mail {
+    display: flex;
+    flex-direction: row;
+    border-left: 82px solid #050748;
+    border-right: 7px solid rgb(255, 255, 255);
+    box-shadow: 4px 4px rgb(233, 231, 231);
+    border-radius: 12px;
+    align-items: center;
+    width: 460px;
+    justify-content: center;
+}
+
+.contact-location {
+    position: relative;
+    left: -30px;
+    font-size: 30px;
+    color: #050748;
+    font-weight: 100;
+}
+
+.btn {
+    margin-top: 25px;
+    background: linear-gradient(85.37deg, #ea028c 3.97%, #fed6a0 91.86%, #fedaa0 91.87%);
+    cursor: pointer;
+    border-style: none;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+}
+
+.btn img {
+    text-align: center;
+    padding: 2px;
+}
+
+.item {
+    width: 380px;
+    height: 505px;
+    margin: 10px;
+    padding: 3px;
+}
+
+.heading-white-bold {
+    font-family: "Roboto Medium";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 28px;
+    color: #ffffff;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    background: linear-gradient(82.7deg, #15054f 0%, #440c83 59.99%, #2df9fd 112.51%);
+    color: white;
+    font-family: "Roboto Medium";
+    font-size: 18px;
+}
+
+.footer-inner {
+    padding: 45px;
+}
+
+.column-first-row {
+    display: flex;
+    flex-direction: row;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.column-second-row {
+    padding-left: 20px;
+    padding-bottom: 50px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.menuitem {
+    display: block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menuclass {
+    padding-top: 30px;
+}
+
+.hq {
+    color: white;
+    font-family: "Roboto Medium";
+    font-size: 25px;
+}
+
+.hqclass {
+    padding-top: 25px;
+    color: #fff;
+    line-height: 25px;
+}
+
+.socialdiv {
+    display: flex;
+    flex-direction: row;
+}
+
+.fa-linkedin {
+    background: #fff;
+    color: #15054f;
+}
+
+.fa-facebook {
+    background: #fff;
+    color: #15054f;
+}
+
+.fa {
+    padding: 1px;
+    font-size: 17px;
+    width: 15px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 10px 9px;
+}
