@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 30px 120px;
+    }
+
+    .time {
+        font-size: 13px;
+        font-weight: 700;
+        padding-bottom: 10px;
+    }
+
+    .heading {
+        padding-top: 35px;
+        font-size: 27px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .center {
+        padding: 0rem 0rem 2rem 7rem;
+    }
+
+    #billdetails {
+        display: block;
+    }
+
+    .bill {
+        display: inline-block;
+        width: 48%;
+    }
+
+    .blue-border {
+        display: block;
+        background-color: #6f6fd6;
+        padding: 2px;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding-bottom: 2px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    td {
+        text-align: center;
+    }
+
+    .right-text {
+        text-align: right;
+    }
+
+    .table {
+        padding: 20px 0px;
+    }
+
+    .sub-sections {
+        margin: 0rem 2rem;
+        padding: 0rem 2rem;
+    }
+
+    .table-pay {
+        text-align: center;
+    }
+
+    .sub-sections-payment {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 60px;
+    }
+
+    .sub-sections-payment h4 {
+        display: flex;
+        padding-right: 275px;
+        margin-bottom: -10px;
+    }
+    .sub-sections h4 {
+        margin-bottom: -10px;
+    }
+
+    .payableAmount td {
+        text-align: left;
+        height: 35px;
+        width: 180px;
+    }
+</style>
+
+<body>
+    <p class="time">24/03/2023 12:10</p>
+    <header class="heading">
+        Invoice
+    </header>
+    <section class="">
+        <div class="blue-border"></div>
+        <div class="sub-sections">
+            <div id="billdetails">
+                <div class="bill">
+                    <p><b>Bill No: </b>BLV-3907</p>
+                </div>
+                <div class="bill">
+                    <p><b>Bill Date: </b>01-January-2023 to 31-January-2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-sections">
+            <div id="billdetails">
+                <div class="bill">
+                    <b>Pay To </b>
+                    <p>test vendor </p>
+                    <p>test address </p>
+                </div>
+                <div class="bill">
+                    <b>Invoice To</b>
+                    <p>
+                        Intelligent Retail Pvt Ltd<br>
+                        #1090/L, 3rd Floor, 18th Cross, Sector 3, HSR Layout Bangalore,<br>
+                        Karnataka, 560102 India<br>
+                        GSTIN Number: 29AAFCI1726B1ZW
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-sections">
+            <h4>Vendor Details</h4>
+            <div id="billdetails">
+                <div class="bill">
+                    <p class="para"><b>PAN: </b>test pan num</p>
+                    <p class="para"><b>Bank: </b>test bank</p>
+                    <p class="para"><b>Account No: </b>1234567893124567890</p>
+                </div>
+                <div class="bill">
+                    <p class="para"><b>GSTIN: </b></p>
+                    <p class="para"><b>Bank Branch: </b></p>
+                    <p class="para"><b>IFSC Code: </b>test ifsc</p>
+                </div>
+            </div>
+        </div>
+        <div class="sub-sections">
+            <h4>Invoice Details</h4>
+            <div id="billdetails">
+                <div class="bill">
+                    <p class="para"><b>Project Location: </b>Hydrabad Alwal FC</p>
+                    <p class="para"><b>No. of Trips.: </b>3</p>
+                </div>
+                <div class="bill">
+                    <p class="para"><b>Bill Period.: </b>Jan-2023</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="blue-border"></div>
+            <div class="sub-sections">
+                <h4>Regular Trip Details</h4>
+                <div class="table">
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>DriverId</th>
+                            <th>Per Day Cost</th>
+                            <th>No of Trips</th>
+                            <th>Amount</th>
+                            <th>Extra Km Cost</th>
+                            <th>Extra Hr Cost</th>
+                            <th>Toll Charges</th>
+                            <th>Grand Amount</th>
+                        </tr>
+                        <tr>
+                            <td>DBLR0105</td>
+                            <td> $ 00.32</td>
+                            <td>3</td>
+                            <td> $ 00.32</td>
+                            <td> $ 0.00</td>
+                            <td> $ 0.00</td>
+                            <td> $ 00.00</td>
+                            <td>$ 00.97</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="right-text" colspan="6">Total </td>
+                            <td> $ 00.97</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="right-text" colspan="6">Total Payable for regular Trips </td>
+                            <td> $ 00.97</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="blue-border"></div>
+
+            <div class="sub-sections">
+                <h4>Adhoc Trip Details</h4>
+                <div class="table">
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>DriverId</th>
+                            <th>Per Day Cost</th>
+                            <th>No of Trips</th>
+                            <th>Amount</th>
+                            <th>Extra Km Cost</th>
+                            <th>Extra Hr Cost</th>
+                            <th>Toll Charges</th>
+                            <th>Grand Amount</th>
+                        </tr>
+                        <tr>
+                            <td>DBLR0105</td>
+                            <td> $ 00.32</td>
+                            <td>3</td>
+                            <td> $ 00.32</td>
+                            <td> $ 0.00</td>
+                            <td> $ 0.00</td>
+                            <td> $ 00.00</td>
+                            <td>$ 00.97</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="right-text" colspan="6">Total </td>
+                            <td> $ 00.97</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="right-text" colspan="6">Total Payable for regular Trips </td>
+                            <td> $ 00.97</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="blue-border"></div>
+            <div class="sub-sections" id="noload">
+                <h4>No Load Trip Details</h4>
+                <div class="table">
+                    <table style="width: 100%;">
+                        <tr>
+                            <th>DriverId</th>
+                            <th>Per Day Cost</th>
+                            <th>No of Trips</th>
+                            <th>Amount</th>
+                            <th>Extra Km Cost</th>
+                            <th>Extra Hr Cost</th>
+                            <th>Toll Charges</th>
+                            <th>Grand Amount</th>
+                        </tr>
+                        <tr>
+                            <td>DBLR0105</td>
+                            <td> $ 00.32</td>
+                            <td>3</td>
+                            <td> $ 00.32</td>
+                            <td> $ 0.00</td>
+                            <td> $ 0.00</td>
+                            <td> $ 00.00</td>
+                            <td> $ 00.97</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="right-text" colspan="6">Total </td>
+                            <td> $ 00.97</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="right-text" colspan="6">Total Payable for regular Trips </td>
+                            <td> $ 00.97</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="blue-border"></div>
+            <div class="sub-sections-payment">
+                <h4>Total Payable</h4>
+                <div class="table">
+                    <table class="payableAmount">
+                        <tr>
+                            <td>Regular Trip Payment : </td>
+                            <td> $ 00.97 </td>
+                        </tr>
+                        <tr>
+                            <td>No Load Trip Payment : </td>
+                            <td>$ 00.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Adhoc trip Payment : </td>
+                            <td> $ 00.00</td>
+                        </tr>
+                        <tr>
+                            <td>Total Amount : </td>
+                            <td> $ 00.97 </td>
+                        </tr>
+                        <tr>
+                            <td>Advance Amount : </td>
+                            <td> $ - 0.00 </td>
+                        </tr>
+                        <tr>
+                            <td>TDS Amount : </td>
+                            <td> $ - 0.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Deduction Amount : </td>
+                            <td> $ - 0.00 </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Deduction Remark : skdhqwkdhqw wkdhqkwdhqwk</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Extra Km Charges : </td>
+                            <td> $ 100.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Extra Hr Charges :</td>
+                            <td> $ 100.00 </td>
+                        </tr>
+                        <tr>
+                            <td>Labour Charges : </td>
+                            <td> $ 100.00 </td>
+                        </tr>
+                        <tr>
+                            <td> Total payable Amount : </td>
+                            <td> $ 400.97 </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

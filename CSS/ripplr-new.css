@@ -1,0 +1,265 @@
+html
+{
+	padding: 0 1em;
+	font-family:Archivo;
+}
+
+body
+{
+	margin: auto;
+    
+	/* max-width: 42em; */
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    /* margin: 5px; */
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    padding-top: 2px;
+    padding-left: 35px;
+}
+
+.navbar {
+    display: inline-block;
+    margin: 0;
+    padding-top: 22px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-bottom: 19px;
+    font-size: 20px;
+}
+
+.navbar li a {
+    color: #000000;
+    text-decoration: none;
+    /* width: 57px;
+    height: 22px; */
+    padding-left: 32px;
+}
+
+.navbar a:active {
+    color: #ff9500;
+}
+
+.right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-right: 12px;
+    padding-bottom: 16px;
+    width: 65px;
+    height: 20px;
+}
+/* second section */
+.second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/Distribution\ \(1\).gif);
+    background-repeat: repeat;
+    background-size: cover;
+    height: 837px;
+    /* width: 1279px; */
+}
+
+.enquire {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 207px;
+    height: 50px;
+}
+
+button {
+    padding: 6px 42px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #171443;
+    text-align: center;
+    color: #ffffff;
+    border-style: none;
+    position: absolute;
+    bottom: -182px;
+    width: 100%;
+}
+
+.heading-about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 650px;
+    text-align: center;
+    background: url(/images/distribution-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+.welcome {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+
+.dist-heading {
+    color: #ff9500;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 63px;
+}
+#About-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 20px;
+    /* max-width: 42em; */
+}
+.about-content, .team{
+    text-align: center;
+}
+.about-content h3{
+    font-size: 30px;
+}
+/* .mission-container, .vision-container{
+    display: flex;
+}
+.headings{
+    font-family: archivo;
+    font-size: 30px;
+    font-weight: 600;
+}
+.mission-para, .vision-para, .team-para{
+    word-wrap: break-word;
+}
+.text{
+    padding-left: 50px;
+    padding-right: 50px;
+    word-spacing: 1px;
+}
+.image-mission{
+    padding-left: 30px;
+}
+.image-vision{
+    padding-right: 30px;
+} */
+img
+{
+	max-width: 100%;
+}
+
+.image-left, .image-right
+{
+	margin: 1em 0;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+		margin-right: 1em;
+		float: left; 
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: 1em;
+		float: right; 
+	}
+	
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 30em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
+.image-left p{
+    font-family: Archivo;
+    font-size: 15px;
+}
+.image-right p{
+    font-family: Archivo;
+    font-size: 15px;
+}
+footer {
+    display: flex;
+    background-color: black;
+}
+
+.footer-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.ripplrtext {
+    padding-top: 20px;
+    padding-left: 0px;
+}
+
+.logo {
+    padding-top: 30px;
+    padding-left: 0px;
+}
+
+
+.footer-center {
+    padding-top: 50px;
+    padding-left: 60px;
+    color: white;
+    font-size: 20px;
+    list-style: none;
+}
+
+.footer-center li {
+    padding: 5px;
+}
+
